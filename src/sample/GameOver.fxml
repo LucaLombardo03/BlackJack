@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="97.0" fitWidth="254.0" layoutX="138.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@BlackJackFoto/GameOver.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="164.0" fitWidth="208.0" layoutX="392.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@BlackJackFoto/sadMario.png" />
+         </image>
+      </ImageView>
+   </children>
+
+</AnchorPane>

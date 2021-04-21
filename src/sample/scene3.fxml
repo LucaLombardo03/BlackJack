@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GameController">
+   <children>
+
+      <ImageView fx:id="plus1" fitHeight="707.0" fitWidth="1000.0" layoutX="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@BlackJackFoto/tavolo.jpg" />
+         </image>
+      </ImageView>
+
+      <Button fx:id="Hit" layoutX="377.0" layoutY="428.0" mnemonicParsing="false" onAction="#hit" prefHeight="43.0" prefWidth="105.0" text="HIT" textAlignment="CENTER" textFill="#5bc339">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+      </Button>
+
+      <Button fx:id="Stand" layoutX="506.0" layoutY="428.0" mnemonicParsing="false" onAction="#stand" prefHeight="43.0" prefWidth="105.0" text="STAND" textAlignment="CENTER" textFill="#5bc339">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+      </Button>
+
+      <Label layoutX="732.0" layoutY="19.0" prefHeight="27.0" prefWidth="105.0" text="Dealer Hand">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Label>
+
+      <ImageView fitHeight="153.0" fitWidth="127.0" layoutX="1.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@BlackJackFoto/fiches.png" />
+         </image>
+      </ImageView>
+
+      <ImageView fitHeight="93.0" fitWidth="167.0" layoutX="16.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@BlackJackFoto/punteggi.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="93.0" fitWidth="167.0" layoutX="732.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FotoCarte/RedCard.png" />
+         </image>
+      </ImageView>
+
+      <Button layoutX="16.0" layoutY="17.0" mnemonicParsing="false" onAction="#switchToMenu" prefHeight="30.0" prefWidth="133.0" text="BACK TO MENU" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Black" size="13.0" />
+         </font>
+      </Button>
+
+      <Label alignment="CENTER" layoutX="869.0" layoutY="32.0" prefHeight="30.0" prefWidth="98.0" text="Balance">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+
+      <TextField fx:id="myBalance" alignment="CENTER" editable="false" layoutX="869.0" layoutY="68.0" prefHeight="43.0" prefWidth="98.0" />
+
+      <Button fx:id="add1" layoutX="819.0" layoutY="301.0" mnemonicParsing="false" onAction="#plus1" prefHeight="50.0" prefWidth="50.0" text="+1" />
+      <Button fx:id="add5" layoutX="874.0" layoutY="301.0" mnemonicParsing="false" onAction="#plus5" prefHeight="50.0" prefWidth="50.0" text="+5" />
+      <Button fx:id="add10" layoutX="929.0" layoutY="301.0" mnemonicParsing="false" onAction="#plus10" prefHeight="50.0" prefWidth="50.0" text="+10" />
+      <Button fx:id="add25" layoutX="819.0" layoutY="364.0" mnemonicParsing="false" onAction="#plus25" prefHeight="50.0" prefWidth="50.0" text="+25" />
+      <Button fx:id="add50" layoutX="874.0" layoutY="364.0" mnemonicParsing="false" onAction="#plus50" prefHeight="50.0" prefWidth="50.0" text="+50" />
+      <Button fx:id="add100" layoutX="929.0" layoutY="364.0" mnemonicParsing="false" onAction="#plus100" prefHeight="50.0" prefWidth="50.0" text="+100" />
+
+      <Button fx:id="NewHand" layoutX="686.0" layoutY="428.0" mnemonicParsing="false" onAction="#NewHand" prefHeight="43.0" prefWidth="133.0" text="NEW HAND" textFill="#bf2626">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+
+      <TextField fx:id="myBet" alignment="CENTER" editable="false" layoutX="821.0" layoutY="250.0" prefHeight="43.0" prefWidth="159.0" />
+
+      <Button fx:id="resetButton" layoutX="850.0" layoutY="428.0" mnemonicParsing="false" onAction="#reset" prefHeight="43.0" prefWidth="98.0" text="RESET">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+
+      <ImageView fx:id="ViewDealerCard1" fitHeight="83.0" fitWidth="60.0" layoutX="257.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FotoCarte/Outline.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ViewDealerCard2" fitHeight="83.0" fitWidth="60.0" layoutX="317.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FotoCarte/Outline.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ViewDealerCard3" fitHeight="93.0" fitWidth="60.0" layoutX="377.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FotoCarte/Outline.png" />
+         </image>
+      </ImageView>
+
+      <ImageView fx:id="ViewDealerCard4" fitHeight="83.0" fitWidth="60.0" layoutX="438.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FotoCarte/Outline.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ViewDealerCard5" fitHeight="83.0" fitWidth="60.0" layoutX="498.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FotoCarte/Outline.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ViewDealerCard6" fitHeight="93.0" fitWidth="60.0" layoutX="558.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FotoCarte/Outline.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ViewDealerCard7" fitHeight="83.0" fitWidth="60.0" layoutX="287.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FotoCarte/Outline.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ViewDealerCard8" fitHeight="83.0" fitWidth="60.0" layoutX="347.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FotoCarte/Outline.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ViewDealerCard9" fitHeight="93.0" fitWidth="60.0" layoutX="407.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FotoCarte/Outline.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ViewDealerCard10" fitHeight="83.0" fitWidth="60.0" layoutX="468.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FotoCarte/Outline.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ViewDealerCard11" fitHeight="83.0" fitWidth="60.0" layoutX="528.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FotoCarte/Outline.png" />
+         </image>
+      </ImageView>
+
+      <ImageView fx:id="ViewPlayerCard1" fitHeight="83.0" fitWidth="60.0" layoutX="617.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FotoCarte/Outline.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ViewPlayerCard2" fitHeight="83.0" fitWidth="60.0" layoutX="557.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FotoCarte/Outline.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ViewPlayerCard3" fitHeight="93.0" fitWidth="60.0" layoutX="497.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FotoCarte/Outline.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ViewPlayerCard4" fitHeight="83.0" fitWidth="60.0" layoutX="437.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FotoCarte/Outline.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ViewPlayerCard5" fitHeight="94.0" fitWidth="60.0" layoutX="377.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FotoCarte/Outline.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ViewPlayerCard6" fitHeight="93.0" fitWidth="60.0" layoutX="317.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FotoCarte/Outline.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ViewPlayerCard7" fitHeight="83.0" fitWidth="60.0" layoutX="598.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FotoCarte/Outline.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ViewPlayerCard8" fitHeight="83.0" fitWidth="60.0" layoutX="538.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FotoCarte/Outline.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ViewPlayerCard9" fitHeight="93.0" fitWidth="60.0" layoutX="478.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FotoCarte/Outline.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ViewPlayerCard10" fitHeight="83.0" fitWidth="60.0" layoutX="418.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FotoCarte/Outline.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ViewPlayerCard11" fitHeight="94.0" fitWidth="60.0" layoutX="358.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FotoCarte/Outline.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="PDealer" layoutX="732.0" layoutY="50.0" prefHeight="37.0" prefWidth="105.0" />
+      <TextField fx:id="PPlayer" layoutX="162.0" layoutY="431.0" prefHeight="37.0" prefWidth="105.0" />
+      <Label fx:id="Result" layoutX="52.0" layoutY="215.0" prefHeight="39.0" prefWidth="295.0" textAlignment="CENTER" textFill="#fa46e6">
+         <font>
+            <Font name="Arial Bold Italic" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
